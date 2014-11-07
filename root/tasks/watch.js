@@ -17,17 +17,13 @@ module.exports = function(grunt) {
       options: {
         livereload: true
       },
-      less: {
-        files: ["src/**/*.less"],
-        tasks: ["less"]
-      },
       templates: {
-        files: ["src/**/*.html", "csv/**/*.csv"],
-        tasks: ["template"]
+        files: ["src/**/*.html"], //test files for local development
+        tasks: ["build"]
       },
       js: {
-        files: ["src/js/**/*"], //everything, due to templating, GLSL, LESS, etc.
-        tasks: ["amd"]
+        files: ["src/**/*"], //everything, due to templating, GLSL, LESS, etc.
+        tasks: ["amd:dev"]
       }
     }
   });
