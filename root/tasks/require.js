@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 
     var config = {
       baseUrl: "src",
-      deps: ["define.js"], //minimal shim for define/require
+      deps: ["define.js", "registerElement"], //minimal shim for define/require
       generateSourceMaps: mode == "dev" ? true : false,
       preserveLicenseComments: false,
       optimize: mode == "dev" ? "none" : "uglify2",
@@ -24,12 +24,7 @@ module.exports = function(grunt) {
       //common paths for bower packages
       //luckily, require won't complain unless we use them
       paths: {
-        share: "lib/share.min",
-        jquery: "lib/jquery/dist/jquery.min",
-        pym: "lib/seattletimes-pym/src/pym",
-        angular: "lib/angular/angular.min",
-        leaflet: "lib/leaflet/dist/leaflet",
-        icanhaz: "lib/icanhaz/ICanHaz.min"
+        "registerElement": "lib/document-register-element/build/document-register-element"
       }
     };
 
