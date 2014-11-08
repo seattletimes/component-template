@@ -1,6 +1,7 @@
 define([
-  "template!./_template.html",
-  "less!./{%= tag_name %}.less"
+  "../amd/template!./_template.html",
+  "../amd/less!./{%= tag_name %}.less",
+  "../lib/document-register-element/build/document-register-element"
 ], function(template) {
 
   var proto = Object.create(HTMLElement.prototype);
