@@ -1,1 +1,1 @@
-require("{%= tag_name %}/{%= tag_name %}");
+require(["{%= tag_name %}/{%= tag_name %}"]);
