@@ -22,9 +22,9 @@ Project layout
 
 By default, a project can contain one or more components. Each one should be contained in its own folder, and "seeded" with a file in the /src directory that requires the component's root module. So, for example, if we were making a component called ``responsive-frame``, we would probably have the following layout:
 
-/src/responsive-frame.html: ``require(["responsive-frame/responsive-frame"]);``
-/src/responsive-frame/responsive-frame.js - Main module for the custom element
-/src/responsive-frame/_template.html - doT template for the element
-/src/responsive-frame/responsive-frame.less - LESS file for the element
+| /src/responsive-frame.html: ``require(["responsive-frame/responsive-frame"]);``
+| /src/responsive-frame/responsive-frame.js - Main module for the custom element
+| /src/responsive-frame/_template.html - doT template for the element
+| /src/responsive-frame/responsive-frame.less - LESS file for the element
 
 The reason for the seeming duplication is to specify which module file is the entry point for the component, while allowing multiple modules within the component folder - we prefer explicit configuration over convention. However, to save time, the scaffolding will set this up for you based on the ``tag_name`` provided during project setup. It will also set up an ``index.html`` file to use for testing during development, with your custom element already included in the page.
