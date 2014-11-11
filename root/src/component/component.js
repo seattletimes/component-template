@@ -1,5 +1,9 @@
-var template = require("./_template.html");
+//shim
 require("document-register-element");
+
+//element setup
+var template = require("./_template.html");
+require("./{%= tag_name %}.less");
 
 var proto = Object.create(HTMLElement.prototype);
 

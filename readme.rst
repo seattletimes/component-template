@@ -1,8 +1,8 @@
 Seattle Times Component Template
 ================================
 
-(or, The Poor Man's Web Components)
-------------------------------------
+(or, The Poor Journalist's Polymer)
+-----------------------------------
 
 This project is a scaffolding for `grunt-init <http://gruntjs.com/project-scaffolding>`__ intended to smooth the process of creating reusable web components. It provides a basic setup process for bundling custom element definitions, along with their templates and styles, into a single .js file for easy use.
 
