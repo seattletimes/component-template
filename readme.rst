@@ -20,11 +20,10 @@ For more details as to how the scaffolding is installed and run, see our `news a
 Project layout
 --------------
 
-By default, a project can contain one or more components. Each one should be contained in its own folder, and "seeded" with a file in the /src directory that requires the component's root module. So, for example, if we were making a component called ``responsive-frame``, we would probably have the following layout:
+By default, a project can contain one or more components. Each one should be contained in its own folder, along with its styles and templates. So, for example, if we were making a component called ``responsive-frame``, we would probably have the following layout:
 
-* /src/responsive-frame.html: ``require(["responsive-frame/responsive-frame"]);``
 * /src/responsive-frame/responsive-frame.js - Main module for the custom element
 * /src/responsive-frame/_template.html - doT template for the element
 * /src/responsive-frame/responsive-frame.less - LESS file for the element
 
-The reason for the seeming duplication is to specify which module file is the entry point for the component, while allowing multiple modules within the component folder - we prefer explicit configuration over convention. However, to save time, the scaffolding will set this up for you based on the ``tag_name`` provided during project setup. It will also set up an ``index.html`` file to use for testing during development, with your custom element already included in the page.
+The scaffolding will also set up an ``index.html`` file with your tag pre-inserted for testing. In the build directory, each component folder will generate two JavaScript files--one for development, which includes a source map, and one marked ``.min.js``, which is for production and omits the source map (eventually it'll be minified as well). 
