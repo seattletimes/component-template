@@ -1,6 +1,12 @@
 {
   "s3": {
-    "bucket": "",
-    "path": ""
+    "stage": {
+      "bucket": "",
+      "path": ""
+    },
+    "live": {
+      "bucket": "",
+      "path": ""
+    }
   }
 }
