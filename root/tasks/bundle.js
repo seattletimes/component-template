@@ -6,6 +6,7 @@ Builds a source package for all components located in this package
 
 var async = require("async");
 var browserify = require("browserify");
+var babel = require("babelify");
 var exorcist = require("exorcist");
 var fs = require("fs");
 var path = require("path");
@@ -28,6 +29,7 @@ module.exports = function(grunt) {
       var outStream = fs.createWriteStream(output);
 
       var b = browserify({ debug: true });
+      b.transform(babel);
 
       b.add("./src/" + file);
       b.bundle().pipe(exorcist(output + ".map")).pipe(outStream).on("finish", function() {

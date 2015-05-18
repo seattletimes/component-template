@@ -15,7 +15,8 @@ module.exports = function(grunt) {
   grunt.config.merge({
     watch: {
       options: {
-        livereload: true
+        livereload: true,
+        spawn: false
       },
       templates: {
         files: ["src/**/*.html"], //test files for local development
