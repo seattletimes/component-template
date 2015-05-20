@@ -12,4 +12,8 @@ proto.attachedCallback = function() {};
 proto.detachedCallback = function() {};
 proto.attributeChangedCallback = function() {};
 
-document.registerElement("{%= tag_name %}", { prototype: proto });
+try {
+  document.registerElement("{%= tag_name %}", { prototype: proto });
+} catch (e) {
+  console.error("<{%= tag_name %}> has already been registered.")
+}
