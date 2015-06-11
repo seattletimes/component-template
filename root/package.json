@@ -9,21 +9,21 @@
   },
   "main": "src/{%= tag_name %}/{%= tag_name %}",
   "dependencies": {
-    "async": "^0.9.0",
-    "aws-sdk": "^2.0.0-rc.19",
-    "browserify": "^6.2.0",
-    "babelify": "^6.1.1",
-    "chalk": "^0.5.1",
-    "document-register-element": "^0.1.6",
+    "async": "^1.2.1",
+    "aws-sdk": "^2.1.33",
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "chalk": "^1.0.0",
+    "document-register-element": "^0.4.3",
     "dot": "^1.0.2",
-    "exorcist": "^0.1.6",
+    "exorcist": "^0.4.0",
     "grunt": "^0.4.5",
-    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-connect": "^0.10.1",
     "grunt-contrib-watch": "^0.6.1",
     "less": "^2.0.0",
     "mime": "^1.2.11",
-    "shelljs": "^0.3.0",
-    "through2": "^0.6.3"
+    "shelljs": "^0.5.1",
+    "through2": "^2.0.0"
   },
   "browserify": {
     "transform": [
