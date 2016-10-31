@@ -8,13 +8,14 @@ livereload server at some point.
 module.exports = function(grunt) {
 
   grunt.loadNpmTasks("grunt-contrib-connect");
-  
+
   grunt.config.merge({
     connect: {
       dev: {
         options: {
           livereload: true,
-          base: "./build"
+          base: "./build",
+          hostname: "localhost"
         }
       }
     }
